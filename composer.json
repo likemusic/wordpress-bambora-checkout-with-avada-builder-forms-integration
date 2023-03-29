@@ -1,0 +1,24 @@
+{
+  "name": "likemusic/wordpress-bambora-checkout-with-avada-builder-forms-integration",
+  "description": "Integration Avada Builder Forms with Bambora Checkout.",
+  "type": "library",
+  "keywords": [
+    "wordpress",
+    "plugin",
+    "payment",
+    "bambora.com",
+    "bambora",
+    "checkout"
+  ],
+  "license": "proprietary",
+  "autoload": {
+    "psr-4": {
+      "Likemusic\\WordPress\\Bambora\\AvadaBuilder\\Forms\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Valery Ivashchanka"
+    }
+  ]
+}
