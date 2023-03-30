@@ -99,12 +99,13 @@ CONTENT;
 
     private function addJsScripts()
     {
-        add_action('wp_enqueue_scripts', [$this, 'addOverrideScripts'], 25);
+        add_action('wp_enqueue_scripts', [$this, 'addOverrideScripts']);
     }
 
     public function addOverrideScripts()
     {
-        wp_enqueue_script('fusion-form-override', plugins_url('bambora-checkout-with-avada-builder-forms-integration/src/assets/js/fusion-form-override.js'), ['fusion-form-js']);
+        wp_enqueue_script('fusion-form-override', plugins_url('bambora-checkout-with-avada-builder-forms-integration/src/assets/js/fusion-form-override.js'));
+        //todo: fusion-form-js depends not works on prod - fix it
     }
 
     public function databaseAjaxSubmitFormHandler()
